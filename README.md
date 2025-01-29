@@ -1,2 +1,2 @@
 # EchoAI
- A project that recieves feedback, analyses the sentiment and responds back using LLM via speech
+ A project that recieves feedback, analyses the sentiment and responds back with speech using LLM.

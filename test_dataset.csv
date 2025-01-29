@@ -1,0 +1,68 @@
+,Text,Sentiment
+0, Enjoying a beautiful day at the park!              ,positive
+1, Traffic was terrible this morning.                 ,negative
+2, Just finished an amazing workout! 💪               ,positive
+3, Excited about the upcoming weekend getaway!        ,positive
+4, Trying out a new recipe for dinner tonight.        ,neutral
+5, Feeling grateful for the little things in life.    ,positive
+6, Rainy days call for cozy blankets and hot cocoa.   ,positive
+7, The new movie release is a must-watch!             ,positive
+8, Political discussions heating up on the timeline.  ,negative
+9, Missing summer vibes and beach days.               ,neutral
+10, Just published a new blog post. Check it out!      ,positive
+11, Feeling a bit under the weather today.             ,negative
+12, Exploring the city's hidden gems.                  ,positive
+13," New year, new fitness goals! 💪                    ",positive
+14, Technology is changing the way we live.            ,neutral
+15, Reflecting on the past and looking ahead.          ,positive
+16, Just adopted a cute furry friend! 🐾              ,positive
+17, Late-night gaming session with friends.            ,positive
+18, Attending a virtual conference on AI.              ,neutral
+19, Winter blues got me feeling low.                   ,negative
+20, Sipping coffee and enjoying a good book.           ,positive
+21, Exploring the world of virtual reality.            ,positive
+22, Productive day ticking off my to-do list.          ,positive
+23, Just finished a challenging workout routine.       ,positive
+24, Celebrating a milestone at work! 🎉               ,positive
+25, Sunday brunch with friends.                        ,positive
+26, Learning a new language for personal growth.       ,positive
+27, Quiet evening with a good book.                    ,positive
+28, Reflecting on the importance of mental health.     ,positive
+29, New painting in progress! 🎨                       ,positive
+30, Weekend road trip to explore scenic views.         ,positive
+31, Enjoying a cup of tea and watching the sunset.     ,positive
+32, Coding a new project with enthusiasm.              ,positive
+33, Feeling inspired after attending a workshop.       ,positive
+34, Winter sports day at the local park.               ,positive
+35, Quality time with family this weekend.             ,positive
+36, Attending a live music concert tonight.            ,positive
+37, Practicing mindfulness with meditation.            ,positive
+38, Trying out a new dessert recipe.                   ,positive
+39, Excited about the upcoming gaming tournament.      ,positive
+40, Planning a garden makeover for spring.             ,positive
+41, Celebrating a friend's birthday tonight! 🎂       ,positive
+42, Feeling accomplished after a productive day.       ,positive
+43, A cozy evening with a good movie.                 ,positive
+44, Exploring local art galleries this weekend.        ,positive
+45, New book release from my favorite author!          ,positive
+46, Attending a virtual reality meetup.                ,positive
+47, Reflecting on the beauty of nature.                ,positive
+48, Cooking a special dinner for loved ones.           ,positive
+49, Feeling optimistic about the week ahead.           ,positive
+50, Starting a new fitness challenge tomorrow! 💪     ,positive
+51, Sunday bike ride through scenic trails.           ,positive
+647,Convinced the teacher to have class outdoors. Learning equations with a side of fresh air! ,positive
+704,Trying out a new study technique for upcoming exams. Exploring different learning strategies. ,neutral
+705,Organizing a community cleanup event for a cleaner neighborhood. Promoting environmental awareness. ,neutral
+706,Sharing favorite book recommendations with classmates. Building a mini book club. ,neutral
+707,Experimenting with a new recipe for a school bake sale. Baking adventures in the kitchen. ,neutral
+708,Collaborating on a school project with peers. Teamwork makes the dream work. ,neutral
+709,Attending a school club meeting to explore new interests. Dabbling in extracurricular activities. ,neutral
+710,Exploring a new part-time job opportunity for gaining work experience. Career development in progress. ,neutral
+711,Attending a school assembly to stay informed about upcoming events and announcements. Staying connected with school activities. ,neutral
+712,Exploring a new hobby of photography during free time. Capturing moments through a lens. ,neutral
+713,Participating in a science fair to showcase a unique experiment. Sharing knowledge with peers. ,neutral
+714,Attending a workshop on time management to enhance organizational skills. Striving for efficiency. ,neutral
+715,Volunteering at a local charity event to give back to the community. Contributing to social causes. ,neutral
+716,Collaborating on a group project to promote teamwork and shared responsibilities. Group effort in action. ,neutral
+717,Participating in a debate club to enhance critical thinking and communication skills. Intellectual engagement in progress. ,neutral
