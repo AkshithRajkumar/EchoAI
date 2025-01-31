@@ -1,0 +1,377 @@
+{
+  "projectFileVersion": "2023-04-15-preview",
+  "stringIndexType": "Utf16CodeUnit",
+  "metadata": {
+      "projectKind": "CustomTextSentiment",
+      "storageInputContainerName": "text-sentiment",
+      "projectName": "custom-sentiment",
+      "multilingual": false,
+      "description": "This is a custom sentiment analysis project.",
+      "language": "en-us"
+  },
+  "assets": {
+      "projectKind": "CustomTextSentiment",
+      "documents": [
+          {
+              "location": "document_1.txt",
+              "language": "en-us",
+              "sentimentSpans": [
+                  {
+                      "category": "positive",
+                      "offset": 0,
+                      "length": 42
+                  },
+                  {
+                      "category": "positive",
+                      "offset": 43,
+                      "length": 78
+                  }
+              ],
+              "dataset": "Train"
+          },
+          {
+              "location": "document_10.txt",
+              "language": "en-us",
+              "sentimentSpans": [
+                  {
+                      "category": "negative",
+                      "offset": 0,
+                      "length": 46
+                  },
+                  {
+                      "category": "negative",
+                      "offset": 47,
+                      "length": 84
+                  }
+              ],
+              "dataset": "Train"
+          },
+          {
+              "location": "document_2.txt",
+              "language": "en-us",
+              "sentimentSpans": [
+                  {
+                      "category": "positive",
+                      "offset": 0,
+                      "length": 44
+                  },
+                  {
+                      "category": "positive",
+                      "offset": 45,
+                      "length": 91
+                  }
+              ],
+              "dataset": "Train"
+          },
+          {
+              "location": "document_3.txt",
+              "language": "en-us",
+              "sentimentSpans": [
+                  {
+                      "category": "positive",
+                      "offset": 0,
+                      "length": 115
+                  }
+              ],
+              "dataset": "Train"
+          },
+          {
+              "location": "document_4.txt",
+              "language": "en-us",
+              "sentimentSpans": [
+                  {
+                      "category": "positive",
+                      "offset": 0,
+                      "length": 39
+                  },
+                  {
+                      "category": "positive",
+                      "offset": 40,
+                      "length": 103
+                  }
+              ],
+              "dataset": "Train"
+          },
+          {
+              "location": "document_5.txt",
+              "language": "en-us",
+              "sentimentSpans": [
+                  {
+                      "category": "positive",
+                      "offset": 0,
+                      "length": 58
+                  },
+                  {
+                      "category": "neutral",
+                      "offset": 59,
+                      "length": 63
+                  }
+              ],
+              "dataset": "Train"
+          },
+          {
+              "location": "document_6.txt",
+              "language": "en-us",
+              "sentimentSpans": [
+                  {
+                      "category": "negative",
+                      "offset": 0,
+                      "length": 75
+                  },
+                  {
+                      "category": "negative",
+                      "offset": 76,
+                      "length": 41
+                  },
+                  {
+                      "category": "negative",
+                      "offset": 118,
+                      "length": 20
+                  }
+              ],
+              "dataset": "Train"
+          },
+          {
+              "location": "document_7.txt",
+              "language": "en-us",
+              "sentimentSpans": [
+                  {
+                      "category": "negative",
+                      "offset": 0,
+                      "length": 72
+                  },
+                  {
+                      "category": "negative",
+                      "offset": 73,
+                      "length": 70
+                  }
+              ],
+              "dataset": "Train"
+          },
+          {
+              "location": "document_8.txt",
+              "language": "en-us",
+              "sentimentSpans": [
+                  {
+                      "category": "negative",
+                      "offset": 0,
+                      "length": 42
+                  },
+                  {
+                      "category": "negative",
+                      "offset": 43,
+                      "length": 90
+                  }
+              ],
+              "dataset": "Train"
+          },
+          {
+              "location": "document_9.txt",
+              "language": "en-us",
+              "sentimentSpans": [
+                  {
+                      "category": "positive",
+                      "offset": 0,
+                      "length": 40
+                  },
+                  {
+                      "category": "negative",
+                      "offset": 41,
+                      "length": 45
+                  },
+                  {
+                      "category": "negative",
+                      "offset": 87,
+                      "length": 46
+                  }
+              ],
+              "dataset": "Train"
+          },
+          {
+              "location": "document_11.txt",
+              "language": "en-us",
+              "sentimentSpans": [
+                  {
+                      "category": "negative",
+                      "offset": 0,
+                      "length": 51
+                  },
+                  {
+                      "category": "negative",
+                      "offset": 52,
+                      "length": 61
+                  }
+              ],
+              "dataset": "Train"
+          },
+          {
+              "location": "document_12.txt",
+              "language": "en-us",
+              "sentimentSpans": [
+                  {
+                      "category": "positive",
+                      "offset": 0,
+                      "length": 51
+                  },
+                  {
+                      "category": "negative",
+                      "offset": 52,
+                      "length": 85
+                  },
+                  {
+                      "category": "negative",
+                      "offset": 138,
+                      "length": 32
+                  }
+              ],
+              "dataset": "Train"
+          },
+          {
+              "location": "document_13.txt",
+              "language": "en-us",
+              "sentimentSpans": [
+                  {
+                      "category": "negative",
+                      "offset": 0,
+                      "length": 56
+                  },
+                  {
+                      "category": "negative",
+                      "offset": 57,
+                      "length": 79
+                  },
+                  {
+                      "category": "negative",
+                      "offset": 137,
+                      "length": 46
+                  }
+              ],
+              "dataset": "Train"
+          },
+          {
+              "location": "document_14.txt",
+              "language": "en-us",
+              "sentimentSpans": [
+                  {
+                      "category": "negative",
+                      "offset": 0,
+                      "length": 83
+                  },
+                  {
+                      "category": "negative",
+                      "offset": 84,
+                      "length": 53
+                  },
+                  {
+                      "category": "negative",
+                      "offset": 138,
+                      "length": 61
+                  }
+              ],
+              "dataset": "Train"
+          },
+          {
+              "location": "document_15.txt",
+              "language": "en-us",
+              "sentimentSpans": [
+                  {
+                      "category": "negative",
+                      "offset": 0,
+                      "length": 80
+                  },
+                  {
+                      "category": "negative",
+                      "offset": 81,
+                      "length": 71
+                  }
+              ],
+              "dataset": "Train"
+          },
+          {
+              "location": "document_16.txt",
+              "language": "en-us",
+              "sentimentSpans": [
+                  {
+                      "category": "positive",
+                      "offset": 0,
+                      "length": 95
+                  },
+                  {
+                      "category": "positive",
+                      "offset": 96,
+                      "length": 32
+                  }
+              ],
+              "dataset": "Train"
+          },
+          {
+              "location": "document_17.txt",
+              "language": "en-us",
+              "sentimentSpans": [
+                  {
+                      "category": "positive",
+                      "offset": 0,
+                      "length": 54
+                  },
+                  {
+                      "category": "positive",
+                      "offset": 55,
+                      "length": 46
+                  }
+              ],
+              "dataset": "Train"
+          },
+          {
+              "location": "document_18.txt",
+              "language": "en-us",
+              "sentimentSpans": [
+                  {
+                      "category": "positive",
+                      "offset": 0,
+                      "length": 67
+                  }
+              ],
+              "dataset": "Train"
+          },
+          {
+              "location": "document_19.txt",
+              "language": "en-us",
+              "sentimentSpans": [
+                  {
+                      "category": "positive",
+                      "offset": 0,
+                      "length": 60
+                  },
+                  {
+                      "category": "neutral",
+                      "offset": 61,
+                      "length": 31
+                  }
+              ],
+              "dataset": "Train"
+          },
+          {
+              "location": "document_20.txt",
+              "language": "en-us",
+              "sentimentSpans": [
+                  {
+                      "category": "positive",
+                      "offset": 0,
+                      "length": 50
+                  },
+                  {
+                      "category": "positive",
+                      "offset": 51,
+                      "length": 49
+                  },
+                  {
+                      "category": "positive",
+                      "offset": 101,
+                      "length": 26
+                  }
+              ],
+              "dataset": "Train"
+          }
+      ]
+  }
+}
