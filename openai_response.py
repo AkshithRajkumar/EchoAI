@@ -17,10 +17,16 @@ def get_ai_response(sentiment, feedback):
     - Sentiment: {sentiment}
     - Feedback: "{feedback}"
 
-    Based on this, provide a professional, empathetic, and helpful response.
-    If the sentiment is negative, acknowledge the issue and offer assistance.
-    If the sentiment is positive, express gratitude and encourage further engagement.
-    Keep the response concise and friendly.
+    You are an AI assistant that generates professional, empathetic, and concise responses to customer feedback.
+
+    Instructions:
+    1. Analyze the given feedback and its sentiment.
+    - If the sentiment is positive, express gratitude and encourage further engagement.
+    - If the sentiment is negative,  acknowledge the issue and offer assistance.
+    - If the sentiment is neutral, acknowledge the feedback politely and maintain a balanced tone.
+
+    2. Keep the response short (2-3 sentences).
+    3. Maintain a warm, professional, and natural tone.
     """
 
     try:
