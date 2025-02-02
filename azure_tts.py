@@ -59,11 +59,11 @@ def generate_ssml(text, sentiment):
         ssml = f"""
         <speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xmlns:mstts='http://www.w3.org/2001/mstts' xml:lang='en-US'>
             <voice name='{select_voice(sentiment)}'>
-            <prosody rate="+8.00%">
-                <mstts:express-as style='{emotion}' styledegree="1.8">
-                    {text}
-                </mstts:express-as>
-            </prosody>    
+                <prosody rate="+8.00%">
+                    <mstts:express-as style='{emotion}' styledegree="1.8">
+                        {text}
+                    </mstts:express-as>
+                </prosody>    
             </voice>
         </speak>
         """
@@ -87,10 +87,10 @@ def generate_ssml(text, sentiment):
         ssml = f"""
         <speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xmlns:mstts='http://www.w3.org/2001/mstts' xml:lang='en-US'>
             <voice name='{select_voice(sentiment)}'>
-                <prosody rate="+15.00%">
-                <mstts:express-as style='{emotion}' styledegree="1.8">
-                    {text}
-                </mstts:express-as>
+                <prosody rate="+10.00%">
+                    <mstts:express-as style='{emotion}' styledegree="1.8">
+                        {text}
+                    </mstts:express-as>
                 </prosody>
             </voice>
         </speak>

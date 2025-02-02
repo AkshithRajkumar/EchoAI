@@ -13,16 +13,16 @@ user_input = st.text_area("Enter feedback:", "")
 st.markdown("""
     <style>
         .stButton > button {
-            background-color: #28a745 !important;  # Green background 
-            color: white !important;               # White text 
+            background-color: #28a745 !important;  /* Green background */
+            color: white !important;               /* White text */
             border: none !important;
         }   
         .stButton > button:hover {
-            background-color: #218838 !important;  # Darker green on hover 
+            background-color: #218838 !important;  /* Darker green on hover */
             color: white !important;
         }
         .stButton > button:focus {
-            background-color: #228B22 !important;  # Keep darker green when focused 
+            background-color: #228B22 !important;  /* Keep darker green when focused */
             color: white !important;
         }
     </style>
