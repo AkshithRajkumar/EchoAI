@@ -55,11 +55,11 @@ SPEECH_REGION=your-azure-region
 
 **Run the Flask backend**
 
-python app.py
+`python app.py`
 
 **Run the Streamlit frontend**
 
-streamlit run app_frontend.py
+`streamlit run app_frontend.py`
 
 # Visuals
 
