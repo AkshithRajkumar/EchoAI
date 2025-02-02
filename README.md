@@ -69,11 +69,11 @@ SPEECH_REGION=your-azure-region
 
 **Submit Feedback**
 
-![Sentiment Analysis](screenshots\echoai_response.jpeg)
+![Sentiment Analysis](https://github.com/AkshithRajkumar/EchoAI/blob/main/screenshots/echoai_response.jpeg)
 
 **Play response**
 
-![Reponse Audio](screenshots\echoai_response_audio.jpeg)
+![Reponse Audio](https://github.com/AkshithRajkumar/EchoAI/blob/main/screenshots/echoai_response_audio.jpeg)
 
 
 
