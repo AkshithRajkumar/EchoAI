@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from azure_sentiment import analyze_sentiment
 from openai_response import get_ai_response
+from azure_tts import text_to_speech
 import logging
 
 # Initialize Flask app
@@ -8,7 +9,7 @@ app = Flask(__name__)
 
 @app.route('/analyze_sentiment', methods=['POST'])
 def analyze():
-    """Handle sentiment analysis request and generate AI response."""
+    """Handle sentiment analysis request, generate AI response, and speak it."""
     try:
         feedback = request.json.get("feedback")
         if not feedback:
@@ -25,10 +26,14 @@ def analyze():
         # Get AI-generated response
         ai_response = get_ai_response(sentiment, feedback)
 
+        # Convert response to speech with emotion
+        text_to_speech(ai_response, sentiment)
+
         return jsonify({
             "sentiment": sentiment,
             "confidence_scores": confidence_scores,
-            "ai_response": ai_response
+            "ai_response": ai_response,
+            "tts": "Speech synthesis initiated."
         })
 
     except Exception as e:

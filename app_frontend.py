@@ -21,12 +21,15 @@ if st.button("Submit Feedback"):
                 sentiment = data.get('sentiment')
                 confidence_scores = data.get('confidence_scores')
                 ai_response = data.get('ai_response')
+                tts = data.get('tts')
 
                 if sentiment and confidence_scores:
                     # Display results
                     st.write(f"Sentiment: {sentiment}")
                     st.write(f"Confidence Scores: {confidence_scores}")
                     st.write(f"Response: {ai_response}")
+                    st.write(f"tts: {tts}")
+    
                 else:
                     st.write("Error: Invalid response from the server.")
             else:
