@@ -10,6 +10,23 @@ AUDIO_URL = "http://localhost:5000/get_audio"
 st.title("Sentiment Analysis Tool")
 user_input = st.text_area("Enter feedback:", "")
 
+# Apply custom CSS to change button colors
+st.markdown("""
+    <style>
+        .stButton > button {
+            background-color: #28a745;  /* Green background */
+            color: white;               /* White text */
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .stButton > button:hover {
+            background-color: #218838;  /* Darker green on hover */
+        }
+    </style>
+""", unsafe_allow_html=True)
+
 # Submit button
 if st.button("Submit Feedback"):
     if user_input:
