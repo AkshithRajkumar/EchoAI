@@ -65,7 +65,7 @@ SPEECH_REGION=your-azure-region
 
 **First Look**
 
-![Feedback Analysis UI - Streamlit](screenshots\echoai_form.jpeg)
+![Feedback Analysis UI - Streamlit](https://github.com/AkshithRajkumar/EchoAI/blob/main/screenshots/echoai_form.jpeg)
 
 **Submit Feedback**
 
