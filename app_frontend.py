@@ -1,5 +1,6 @@
 import streamlit as st
 import requests
+import plotly.graph_objects as go
 
 # Flask URL
 FLASK_URL = "http://localhost:5000/analyze_sentiment" 
@@ -47,13 +48,29 @@ if st.button("Submit Feedback"):
 # Display results
 if 'sentiment' in st.session_state:
     st.write(f"Sentiment: {st.session_state.sentiment}")
-    st.write(f"Confidence Scores: {st.session_state.confidence_scores}")
+    # st.write(f"Confidence Scores: {st.session_state.confidence_scores}")
+
+    labels = ['Positive', 'Neutral', 'Negative']
+    sizes = [st.session_state.confidence_scores['positive'], st.session_state.confidence_scores['neutral'], st.session_state.confidence_scores['negative']]
+    colors = ['#66b3ff','#99ff99','#ff6666']
+    # colors = ['green', 'blue', 'red']
+    
+     # Create the interactive pie chart using Plotly
+    fig = go.Figure(data=[go.Pie(labels=labels, values=sizes, hole=0.3, marker=dict(colors=colors), textinfo='percent+label', pull=[0.1, 0, 0])])
+
+    # Update layout for the pie chart
+    fig.update_layout(title="Sentiment Distribution",showlegend=True)
+    
+    # Display the interactive pie chart
+    st.plotly_chart(fig)
+    
     st.write(f"Response: {st.session_state.ai_response}")
 
 # Play audio button
-if st.button("Play Response"):
-    audio_response = requests.get(AUDIO_URL)
-    if audio_response.status_code == 200:
-        st.audio(audio_response.content, format="audio/wav")
-    else:
-        st.write("Error fetching audio file.")
+if 'ai_response' in st.session_state:
+    if st.button("Play Response"):
+        audio_response = requests.get(AUDIO_URL)
+        if audio_response.status_code == 200:
+            st.audio(audio_response.content, format="audio/wav")
+        else:
+            st.write("Error fetching audio file.")
