@@ -1,5 +1,9 @@
 # EchoAI
- A project that recieves feedback, analyses the sentiment and responds back with speech using LLM.
+ A project that recieves feedback, analyses the sentiment and responds back with speech using LLM.  
+
+**Input:** User feedback  
+**Processing:** Sentiment Analysis + AI Response Generation  
+**Output:** Text & Speech Response (with emotion)  
 
 # Feedback Analysis Web App
 
@@ -17,6 +21,8 @@ This project is a **Flask + Streamlit** web app that performs **sentiment analys
 
 # Getting Started
 
+Follow these steps to set up and run EchoAI:
+
 **Installation Steps**
 
 **Create a new Virtual Environment**
@@ -29,7 +35,11 @@ This project is a **Flask + Streamlit** web app that performs **sentiment analys
 
 **Clone the github repo**
 
-`git clone https://github.com/AkshithRajkumar/EchoAI.git`
+
+```bash
+git clone https://github.com/AkshithRajkumar/EchoAI.git
+cd EchoAI
+```
 
 **Install Required Packages**
 
@@ -37,9 +47,9 @@ This project is a **Flask + Streamlit** web app that performs **sentiment analys
 
 **Setup API Keys**
 
-The project requires setting up a Language service and a Speech service under the Azure AI services. Look at the following [link](https://www.youtube.com/watch?v=anu8kPVt5PA) for setup reference. 
+The project requires Azure AI Language & Speech services and an OpenAI API key.
 
-Additionally, a OpenAI API key is required which can be generated as a project API key.
+Follow this [Azure Setup Guide](https://www.youtube.com/watch?v=anu8kPVt5PA) for setting up Azure services.
 
 Create a `.env` file in the project root and add:
 
@@ -57,9 +67,19 @@ SPEECH_REGION=your-azure-region
 
 `python app.py`
 
+Expected Output:
+
+* The Flask API starts running on http://127.0.0.1:5000/.   
+* Ready to analyze sentiment & generate AI responses.  
+
 **Run the Streamlit frontend**
 
 `streamlit run app_frontend.py`
+
+Expected Output:
+
+* The Streamlit UI opens in your browser.  
+* Users can enter feedback & receive AI-powered spoken responses.  
 
 # Visuals
 
