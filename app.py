@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_file
 from azure_sentiment import analyze_sentiment
 from openai_response import get_ai_response
 from azure_tts import text_to_speech
@@ -27,18 +27,35 @@ def analyze():
         ai_response = get_ai_response(sentiment, feedback)
 
         # Convert response to speech with emotion
-        text_to_speech(ai_response, sentiment)
+        audio_file =  text_to_speech(ai_response, sentiment)
+
+        if not audio_file:
+            return jsonify({
+                "sentiment": sentiment,
+                "confidence_scores": confidence_scores,
+                "ai_response": ai_response,
+                "tts": "Speech synthesis failed."
+            }), 500
 
         return jsonify({
             "sentiment": sentiment,
             "confidence_scores": confidence_scores,
             "ai_response": ai_response,
-            "tts": "Speech synthesis initiated."
+            "audio_url": f"http://localhost:5000/get_audio"
         })
 
     except Exception as e:
         logging.error(f"An unexpected error occurred: {str(e)}")
         return jsonify({"error": f"An unexpected error occurred: {str(e)}"}), 500
+
+@app.route('/get_audio', methods=['GET'])
+def get_audio():
+    """Send the generated speech audio file to the frontend."""
+    audio_path = "response.wav"  # Ensure this matches the filename in `text_to_speech()`
+    if os.path.exists(audio_path):
+        return send_file(audio_path, mimetype="audio/wav")
+    else:
+        return jsonify({"error": "Audio file not found."}), 404      
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)

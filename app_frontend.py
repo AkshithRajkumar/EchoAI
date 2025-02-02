@@ -3,6 +3,7 @@ import requests
 
 # Flask URL
 FLASK_URL = "http://localhost:5000/analyze_sentiment" 
+AUDIO_URL = "http://localhost:5000/get_audio" 
 
 # Streamlit UI
 st.title("Sentiment Analysis Tool")
@@ -21,14 +22,21 @@ if st.button("Submit Feedback"):
                 sentiment = data.get('sentiment')
                 confidence_scores = data.get('confidence_scores')
                 ai_response = data.get('ai_response')
-                tts = data.get('tts')
+                audio_url = data.get('audio_url')
 
                 if sentiment and confidence_scores:
                     # Display results
                     st.write(f"Sentiment: {sentiment}")
                     st.write(f"Confidence Scores: {confidence_scores}")
                     st.write(f"Response: {ai_response}")
-                    st.write(f"tts: {tts}")
+                    
+                    # Play audio button
+                    if st.button("Play Response"):
+                        audio_response = requests.get(AUDIO_URL)
+                        if audio_response.status_code == 200:
+                            st.audio(audio_response.content, format="audio/wav")
+                        else:
+                            st.write("Error fetching audio file.")
     
                 else:
                     st.write("Error: Invalid response from the server.")
