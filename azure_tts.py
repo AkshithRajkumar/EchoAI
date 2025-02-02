@@ -19,13 +19,13 @@ def text_to_speech(text, sentiment, filename = "response.wav"):
         # Set output to a file instead of just playing it
         audio_config = speechsdk.audio.AudioOutputConfig(filename=filename)
         # Create speech synthesizer
-        synthesizer = speechsdk.SpeechSynthesizer(speech_config=speech_config)
+        synthesizer = speechsdk.SpeechSynthesizer(speech_config=speech_config, audio_config=audio_config)
 
         # Generate SSML (Speech Synthesis Markup Language) for emotional speech
         ssml = generate_ssml(text, sentiment)
 
-        # Speak the response
-        result = synthesizer.speak_ssml(ssml)
+        # Save the response
+        result = synthesizer.speak_ssml_async(ssml).get()
 
         if result.reason == speechsdk.ResultReason.SynthesizingAudioCompleted:
             print(f"Speech synthesis completed successfully! Audio saved as {filename}")

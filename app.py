@@ -3,6 +3,7 @@ from azure_sentiment import analyze_sentiment
 from openai_response import get_ai_response
 from azure_tts import text_to_speech
 import logging
+import os
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -40,8 +41,7 @@ def analyze():
         return jsonify({
             "sentiment": sentiment,
             "confidence_scores": confidence_scores,
-            "ai_response": ai_response,
-            "audio_url": f"http://localhost:5000/get_audio"
+            "ai_response": ai_response
         })
 
     except Exception as e:
@@ -51,6 +51,7 @@ def analyze():
 @app.route('/get_audio', methods=['GET'])
 def get_audio():
     """Send the generated speech audio file to the frontend."""
+    
     audio_path = "response.wav"  # Ensure this matches the filename in `text_to_speech()`
     if os.path.exists(audio_path):
         return send_file(audio_path, mimetype="audio/wav")

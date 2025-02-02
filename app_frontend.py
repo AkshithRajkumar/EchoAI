@@ -22,22 +22,13 @@ if st.button("Submit Feedback"):
                 sentiment = data.get('sentiment')
                 confidence_scores = data.get('confidence_scores')
                 ai_response = data.get('ai_response')
-                audio_url = data.get('audio_url')
 
                 if sentiment and confidence_scores:
                     # Display results
                     st.write(f"Sentiment: {sentiment}")
                     st.write(f"Confidence Scores: {confidence_scores}")
                     st.write(f"Response: {ai_response}")
-                    
-                    # Play audio button
-                    if st.button("Play Response"):
-                        audio_response = requests.get(AUDIO_URL)
-                        if audio_response.status_code == 200:
-                            st.audio(audio_response.content, format="audio/wav")
-                        else:
-                            st.write("Error fetching audio file.")
-    
+                          
                 else:
                     st.write("Error: Invalid response from the server.")
             else:
@@ -48,3 +39,11 @@ if st.button("Submit Feedback"):
             st.write(f"Error: Invalid JSON response from the server. Details: {e}")
     else:
         st.write("Please enter some feedback.")
+
+# Play audio button
+if st.button("Play Response"):
+    audio_response = requests.get(AUDIO_URL)
+    if audio_response.status_code == 200:
+        st.audio(audio_response.content, format="audio/wav")
+    else:
+        st.write("Error fetching audio file.")
