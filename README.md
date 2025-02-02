@@ -13,11 +13,11 @@ This project is a **Flask + Streamlit** web app that performs **sentiment analys
 **Purpose:** Analyze sentiment from text input and generate appropriate spoken responses with emotion.
 
 ## Features 
--Analyze sentiment of text using Azure AI Language Service  
--Generate AI-based responses with OpenAI GPT  
--Convert text responses to speech using Azure AI Speech Service 
--Interactive Streamlit UI with a pie chart visualization  
--Play and download generated speech response directly in the app  
+- Analyze sentiment of text using Azure AI Language Service  
+- Generate AI-based responses with OpenAI GPT  
+- Convert text responses to speech using Azure AI Speech Service 
+- Interactive Streamlit UI with a pie chart visualization  
+- Play and download generated speech response directly in the app  
 
 # Getting Started
 
