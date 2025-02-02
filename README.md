@@ -23,7 +23,7 @@ This project is a **Flask + Streamlit** web app that performs **sentiment analys
 
 Follow these steps to set up and run EchoAI:
 
-**Installation Steps**
+**Installation Steps:**
 
 ***Create a new Virtual Environment***
 
