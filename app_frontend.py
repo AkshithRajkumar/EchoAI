@@ -16,16 +16,7 @@ st.markdown("""
         .stButton > button {
             background-color: #28a745;  /* Green background */
             color: white;               /* White text */
-            border: none;
-            border-radius: 5px;
-            padding: 10px 20px;
-            font-size: 16px;
-        }
-        .stButton > button:hover {
-            background-color: #218838;  /* Darker green on hover */
-        }
-    </style>
-""", unsafe_allow_html=True)
+            border: none; """, unsafe_allow_html=True)
 
 # Submit button
 if st.button("Submit Feedback"):
@@ -64,7 +55,7 @@ if st.button("Submit Feedback"):
 
 # Display results
 if 'sentiment' in st.session_state:
-    st.write(f"Sentiment: {st.session_state.sentiment}")
+    st.markdown(f"## **Sentiment:** {st.session_state.sentiment.capitalize()}")
     # st.write(f"Confidence Scores: {st.session_state.confidence_scores}")
 
     labels = ['Positive', 'Neutral', 'Negative']
@@ -81,7 +72,7 @@ if 'sentiment' in st.session_state:
     # Display the interactive pie chart
     st.plotly_chart(fig)
     
-    st.write(f"Response: {st.session_state.ai_response}")
+    st.markdown(f"### **Response:** {st.session_state.ai_response}")
 
 # Play audio button
 if 'ai_response' in st.session_state:
