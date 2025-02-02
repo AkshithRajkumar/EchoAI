@@ -24,11 +24,15 @@ if st.button("Submit Feedback"):
                 ai_response = data.get('ai_response')
 
                 if sentiment and confidence_scores:
+                    # Store response in session_state
+                    st.session_state.sentiment = sentiment
+                    st.session_state.confidence_scores = confidence_scores
+                    st.session_state.ai_response = ai_response
+                    
                     # Display results
-                    st.write(f"Sentiment: {sentiment}")
-                    st.write(f"Confidence Scores: {confidence_scores}")
-                    st.write(f"Response: {ai_response}")
-                          
+                    # st.write(f"Sentiment: {sentiment}")
+                    # st.write(f"Confidence Scores: {confidence_scores}")
+                    # st.write(f"Response: {ai_response}")
                 else:
                     st.write("Error: Invalid response from the server.")
             else:
@@ -39,6 +43,12 @@ if st.button("Submit Feedback"):
             st.write(f"Error: Invalid JSON response from the server. Details: {e}")
     else:
         st.write("Please enter some feedback.")
+
+# Display results
+if 'sentiment' in st.session_state:
+    st.write(f"Sentiment: {st.session_state.sentiment}")
+    st.write(f"Confidence Scores: {st.session_state.confidence_scores}")
+    st.write(f"Response: {st.session_state.ai_response}")
 
 # Play audio button
 if st.button("Play Response"):
