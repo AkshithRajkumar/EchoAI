@@ -25,15 +25,15 @@ Follow these steps to set up and run EchoAI:
 
 **Installation Steps**
 
-**Create a new Virtual Environment**
+***Create a new Virtual Environment***
 
 `conda create --name myenv python=3.9`
 
-**Activate the virtual Enviornment**
+***Activate the virtual Enviornment***
 
 `conda activate myenv`
 
-**Clone the github repo**
+***Clone the github repo***
 
 
 ```bash
@@ -41,11 +41,11 @@ git clone https://github.com/AkshithRajkumar/EchoAI.git
 cd EchoAI
 ```
 
-**Install Required Packages**
+***Install Required Packages***
 
 `pip install -r requirements.txt`
 
-**Setup API Keys**
+***Setup API Keys***
 
 The project requires Azure AI Language & Speech services and an OpenAI API key.
 
@@ -63,7 +63,7 @@ SPEECH_REGION=your-azure-region
 
 # Implementation
 
-**Run the Flask backend**
+***Run the Flask backend***
 
 `python app.py`
 
@@ -72,7 +72,7 @@ Expected Output:
 * The Flask API starts running on http://127.0.0.1:5000/.   
 * Ready to analyze sentiment & generate AI responses.  
 
-**Run the Streamlit frontend**
+***Run the Streamlit frontend***
 
 `streamlit run app_frontend.py`
 
