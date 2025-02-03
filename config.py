@@ -22,7 +22,7 @@ if not LANGUAGE_ENDPOINT or not LANGUAGE_KEY:
     logging.error("Missing Azure API credentials: LANGUAGE_ENDPOINT or LANGUAGE_KEY")
 
 if not SPEECH_KEY or not SPEECH_REGION:
-    loggin.error("Missing Azure API credentials: SPEECH_KEY or SPEECH_REGION")
+    logging.error("Missing Azure API credentials: SPEECH_KEY or SPEECH_REGION")
 
 if not OPENAI_API_KEY:
     logging.error("Missing OpenAI API key: OPENAI_API_KEY")    
