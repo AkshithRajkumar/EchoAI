@@ -19,6 +19,10 @@ This project is a **Flask + Streamlit** web app that performs **sentiment analys
 - Interactive Streamlit UI with a pie chart visualization  
 - Play and download generated speech response directly in the app  
 
+# Video of the project implementation
+
+[![Video Title](https://img.youtube.com/vi/UyFwrQNGuS8/0.jpg)](https://www.youtube.com/watch?v=UyFwrQNGuS8)
+
 # Getting Started
 
 Follow these steps to set up and run EchoAI:
@@ -94,13 +98,4 @@ Expected Output:
 **Play response**
 
 ![Reponse Audio](https://github.com/AkshithRajkumar/EchoAI/blob/main/screenshots/echoai_response_audio.jpeg)
-
-# Video of the project implementation
-
-[![Video Title](https://img.youtube.com/vi/UyFwrQNGuS8/0.jpg)](https://www.youtube.com/watch?v=UyFwrQNGuS8)
-
-
-
-
-
 
