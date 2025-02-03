@@ -97,7 +97,8 @@ Expected Output:
 
 # Video of the project implementation
 
-![Play to watch Implementation](https://youtu.be/UyFwrQNGuS8)
+[![Video Title](https://img.youtube.com/vi/v=UyFwrQNGuS8/0.jpg)](https://www.youtube.com/watch?v=UyFwrQNGuS8)
+
 
 
 
