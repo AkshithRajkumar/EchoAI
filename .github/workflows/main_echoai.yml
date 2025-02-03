@@ -66,6 +66,9 @@ jobs:
           app-name: 'echoai'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+        
+      - name: Add delay to avoid conflicts with App Service restart
+        run: sleep 30  # Wait for 30 seconds before continuing
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
