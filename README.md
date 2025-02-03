@@ -95,6 +95,10 @@ Expected Output:
 
 ![Reponse Audio](https://github.com/AkshithRajkumar/EchoAI/blob/main/screenshots/echoai_response_audio.jpeg)
 
+# Video of the project implementation
+
+![Play to watch Implementation](https://youtu.be/UyFwrQNGuS8)
+
 
 
 
