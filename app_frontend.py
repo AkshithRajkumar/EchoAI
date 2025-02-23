@@ -2,8 +2,8 @@ import streamlit as st
 import requests
 import plotly.graph_objects as go
 
-FLASK_URL = "http://localhost:5000/analyze_sentiment" 
-AUDIO_URL = "http://localhost:5000/get_audio" 
+FLASK_URL = "http://localhost:8000/analyze_sentiment" 
+AUDIO_URL = "http://localhost:8000/get_audio" 
 
 # Streamlit UI
 st.title("Feedback Analysis Tool")
